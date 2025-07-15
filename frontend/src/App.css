@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.title-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.page-background {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  padding-top: 1rem;
+}
+.dark-section {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.checkout-bg {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Sidebar - homepage */
+.fixed-sidebar {
+  position: sticky;
+  top: 50px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fff;
+  border-right: 1px solid #dee2e6;
+  padding-right: 1rem;
+}
+/* Sidebar */
+.sidebar {
+  max-width: 250px;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.sidebar h6 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.sidebar .form-check-label {
+  text-transform: capitalize;
+}
+
+.sidebar .form-select {
+  font-size: 14px;
+  padding: 4px 8px;
+}
+/* Header */
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-dark .nav-link {
+  color: white !important;
+  margin-right: 15px;
+}

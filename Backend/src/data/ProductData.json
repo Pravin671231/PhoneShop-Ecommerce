@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Realme GT 6 Pro",
+    "rating": 4.7,
+    "description": {
+      "display": "6.78-inch AMOLED",
+      "processor": "Snapdragon 8 Gen 3",
+      "ram": "12GB",
+      "storage": "512GB",
+      "battery": "4500mAh"
+    },
+    "price": 47999,
+    "brand": "Realme",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752613137/ecommerce/products/zw7b8zwuspzibde0bumn.webp",
+    "countInStock": 14
+  },
+  {
+    "title": "Nothing Phone (2)",
+    "rating": 4.6,
+    "description": {
+      "display": "6.7-inch OLED",
+      "processor": "Snapdragon 8+ Gen 1",
+      "ram": "12GB",
+      "storage": "256GB",
+      "battery": "4700mAh"
+    },
+    "price": 44999,
+    "brand": "Nothing",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752613265/ecommerce/products/lrtx3dxt7czhyn9mkiqn.webp",
+    "countInStock": 20
+  },
+  {
+    "title": "Lava Agni 2",
+    "rating": 4.2,
+    "description": {
+      "display": "6.5-inch AMOLED",
+      "processor": "Dimensity 7050",
+      "ram": "8GB",
+      "storage": "128GB",
+      "battery": "4500mAh"
+    },
+    "price": 21999,
+    "brand": "Lava",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752613458/ecommerce/products/tms4lgyp8ghill2bcd5k.webp",
+    "countInStock": 25
+  },
+  {
+    "title": "iQOO Z9",
+    "rating": 4.3,
+    "description": {
+      "display": "6.67-inch AMOLED",
+      "processor": "Dimensity 7200",
+      "ram": "8GB",
+      "storage": "128GB",
+      "battery": "5000mAh"
+    },
+    "price": 18999,
+    "brand": "iQOO",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752613621/ecommerce/products/fsbfhnxxukuhxplu6fyq.webp",
+    "countInStock": 30
+  },
+  {
+    "title": "Samsung Galaxy M14",
+    "rating": 4.1,
+    "description": {
+      "display": "6.6-inch PLS LCD",
+      "processor": "Exynos 1330",
+      "ram": "6GB",
+      "storage": "128GB",
+      "battery": "6000mAh"
+    },
+    "price": 13499,
+    "brand": "Samsung",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752613677/ecommerce/products/woame5nvudajjgmfr2fh.webp",
+    "countInStock": 40
+  },
+  {
+    "title": "Redmi Note 13 5G",
+    "rating": 4.4,
+    "description": {
+      "display": "6.6-inch AMOLED",
+      "processor": "Dimensity 6100+",
+      "ram": "8GB",
+      "storage": "128GB",
+      "battery": "5000mAh"
+    },
+    "price": 16999,
+    "brand": "Xiaomi",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752613821/ecommerce/products/kytf9c6qfufybbc6fx6v.jpg",
+    "countInStock": 22
+  },
+  {
+    "title": "Motorola G73 5G",
+    "rating": 4.0,
+    "description": {
+      "display": "6.5-inch LCD",
+      "processor": "Dimensity 930",
+      "ram": "8GB",
+      "storage": "128GB",
+      "battery": "5000mAh"
+    },
+    "price": 18499,
+    "brand": "Motorola",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752613890/ecommerce/products/mkpfivfafmehhbxx5jlm.jpg",
+    "countInStock": 18
+  },
+  {
+    "title": "Infinix Zero 30 5G",
+    "rating": 4.3,
+    "description": {
+      "display": "6.78-inch AMOLED",
+      "processor": "Dimensity 8020",
+      "ram": "12GB",
+      "storage": "256GB",
+      "battery": "5000mAh"
+    },
+    "price": 23999,
+    "brand": "Infinix",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614003/ecommerce/products/o9rzbmqcvvyyecxowo38.jpg",
+    "countInStock": 10
+  },
+  {
+    "title": "POCO X6 Pro",
+    "rating": 4.5,
+    "description": {
+      "display": "6.67-inch AMOLED",
+      "processor": "Dimensity 8300 Ultra",
+      "ram": "8GB",
+      "storage": "256GB",
+      "battery": "5000mAh"
+    },
+    "price": 26999,
+    "brand": "POCO",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614069/ecommerce/products/rcbx8pmfubxuvxno65eb.webp",
+    "countInStock": 15
+  },
+  {
+    "title": "Vivo T2 Pro 5G",
+    "rating": 4.2,
+    "description": {
+      "display": "6.78-inch AMOLED",
+      "processor": "Dimensity 7200",
+      "ram": "8GB",
+      "storage": "128GB",
+      "battery": "4600mAh"
+    },
+    "price": 23999,
+    "brand": "Vivo",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614171/ecommerce/products/d7exzrdkygaok2yf0usc.webp",
+    "countInStock": 19
+  },
+  {
+    "title": "iQOO Neo 7",
+    "rating": 4.6,
+    "description": {
+      "display": "6.78-inch AMOLED",
+      "processor": "Dimensity 8200",
+      "ram": "8GB",
+      "storage": "128GB",
+      "battery": "5000mAh"
+    },
+    "price": 29999,
+    "brand": "iQOO",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614327/ecommerce/products/nfc2qp27edvogftkn04z.jpg",
+    "countInStock": 10
+  },
+  {
+    "title": "Samsung Galaxy A15",
+    "rating": 4.0,
+    "description": {
+      "display": "6.5-inch Super AMOLED",
+      "processor": "Helio G99",
+      "ram": "6GB",
+      "storage": "128GB",
+      "battery": "5000mAh"
+    },
+    "price": 15999,
+    "brand": "Samsung",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614472/ecommerce/products/ppyhyhnh6gn9gnxwsjit.webp",
+    "countInStock": 20
+  },
+  {
+    "title": "Realme Narzo 70 Pro",
+    "rating": 4.1,
+    "description": {
+      "display": "6.67-inch AMOLED",
+      "processor": "Dimensity 7050",
+      "ram": "8GB",
+      "storage": "128GB",
+      "battery": "5000mAh"
+    },
+    "price": 19999,
+    "brand": "Realme",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614554/ecommerce/products/lsuj9eezb7n4tlbcrmo8.webp",
+    "countInStock": 25
+  },
+  {
+    "title": "Infinix GT 10 Pro",
+    "rating": 4.3,
+    "description": {
+      "display": "6.67-inch AMOLED",
+      "processor": "Dimensity 8050",
+      "ram": "8GB",
+      "storage": "256GB",
+      "battery": "5000mAh"
+    },
+    "price": 18999,
+    "brand": "Infinix",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614634/ecommerce/products/edwbzu6enerdgsrklslu.webp",
+    "countInStock": 17
+  },
+  {
+    "title": "Lava Blaze 5G",
+    "rating": 3.9,
+    "description": {
+      "display": "6.5-inch IPS LCD",
+      "processor": "Dimensity 6020",
+      "ram": "6GB",
+      "storage": "128GB",
+      "battery": "5000mAh"
+    },
+    "price": 11999,
+    "brand": "Lava",
+    "image": "https://res.cloudinary.com/dwanncrtz/image/upload/v1752614709/ecommerce/products/nqs7trukmhav9qhdpt0u.jpg",
+    "countInStock": 50
+  }
+]
