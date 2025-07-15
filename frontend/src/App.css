@@ -42,7 +42,7 @@ body {
 .sidebar {
   max-width: 250px;
   position: sticky;
-  top: 80px;
+  top: 10px;
   height: fit-content;
   border: 1px solid #e0e0e0;
   font-size: 14px;
