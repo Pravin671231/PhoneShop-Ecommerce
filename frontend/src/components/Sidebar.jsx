@@ -1,4 +1,4 @@
-import { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 // import "./Sidebar.css"; // You can create and use this for styling
 
 const Sidebar = ({
@@ -30,10 +30,24 @@ const Sidebar = ({
     );
   };
 
+  const handleResetFilters = () => {
+    setSelectedBrands([]);
+    setSelectedRam("All");
+    setSelectedStorage("All");
+    setPriceRange(maxPrice);
+  };
+
   return (
     <div className="sidebar p-3 shadow-sm bg-white rounded">
-      <h5 className="mb-3 fw-bold">Filters</h5>
-
+      <div className="d-flex justify-content-between">
+      <Button
+        variant="outline-danger"
+        className="mb-3 w-100"
+        onClick={handleResetFilters}
+      >
+        Reset
+      </Button>
+      </div>
       {/* Brand Filter */}
       <div className="mb-4">
         <h6 className="fw-semibold">Brand</h6>
@@ -58,7 +72,7 @@ const Sidebar = ({
           <span>₹{priceRange}</span>
         </div>
         <Form.Range
-        className=""
+          className=""
           min={minPrice}
           max={maxPrice}
           value={priceRange}

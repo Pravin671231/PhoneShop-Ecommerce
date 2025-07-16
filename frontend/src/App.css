@@ -76,3 +76,14 @@ body {
   color: white !important;
   margin-right: 15px;
 }
+
+/* Filter button */
+.sidebar-toggle-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+

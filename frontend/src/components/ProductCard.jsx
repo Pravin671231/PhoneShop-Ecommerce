@@ -57,16 +57,18 @@ const ProductCard = ({ product }) => {
           <div>
             <h4 className="text-danger">₹{product.price}</h4>
           </div>
-          <div>
+          <div className="d-flex justify-content-between w-sm-100 d-md-inline-block ">
             <Button
               variant="warning"
-              className="me-2"
+              className="mt-2 ms-2"
               onClick={handleAddToCart}
             >
               Add to Cart
             </Button>
             <Link to={`/products/${product._id}`}>
-              <Button variant="outline-primary">View</Button>
+              <Button variant="outline-primary" className="mt-2 ms-2 stretched-link">
+                View
+              </Button>
             </Link>
           </div>
         </Col>
