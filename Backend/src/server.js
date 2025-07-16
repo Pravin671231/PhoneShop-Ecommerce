@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://phonestore-pravin.netlify.app/",
+    origin: "https://phonestore-pravin.netlify.app",
     credentials: true,
   })
 );
