@@ -16,6 +16,7 @@ import AddressEdit from "./components/AddressEdit";
 import PaymentPage from "./pages/PaymentPage";
 import OrderSuccess from "./components/OrderSuccess ";
 import AddressForm from "./components/AddressForm";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
           <Route path="/address/edit/:id" element={<AddressEdit />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/order-success" element={<OrderSuccess />} />
+          <Route path="*" element={<NotFound />} />
           <Route
             path="/admin/dashboard"
             element={
