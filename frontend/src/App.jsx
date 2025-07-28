@@ -11,6 +11,11 @@ import CheckoutPage from "./pages/CheckoutPage";
 import MyOrdersPage from "./pages/MyOrdersPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import Header from "./components/Header";
+import AddressListPage from "./pages/AddressPage";
+import AddressEdit from "./components/AddressEdit";
+import PaymentPage from "./pages/PaymentPage";
+import OrderSuccess from "./components/OrderSuccess ";
+import AddressForm from "./components/AddressForm";
 
 function App() {
   return (
@@ -49,6 +54,10 @@ function App() {
               </ProtectRoute>
             }
           />
+          <Route path="/address/add" element={<AddressForm />} />
+          <Route path="/address/edit/:id" element={<AddressEdit />} />
+          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/order-success" element={<OrderSuccess />} />
           <Route
             path="/admin/dashboard"
             element={

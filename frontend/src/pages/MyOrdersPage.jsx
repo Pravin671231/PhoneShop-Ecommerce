@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { Button, Container, Table, Badge } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const API = import.meta.env.VITE_API_URL;
 
@@ -9,7 +10,7 @@ const MyOrdersPage = () => {
   const { userInfo } = useSelector((state) => state.user);
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchOrders = async () => {
       try {
@@ -31,26 +32,9 @@ const MyOrdersPage = () => {
     if (userInfo) fetchOrders();
   }, [userInfo]);
 
-  const handlePaid = async (id) => {
-    try {
-      await axios.put(
-        `${API}/orders/${id}/pay`,
-        {},
-        {
-          headers: {
-            Authorization: `Bearer ${userInfo.token}`,
-          },
-        }
-      );
-      // Instead of full reload, update state locally or refetch:
-      setOrders((prev) =>
-        prev.map((order) =>
-          order._id === id ? { ...order, isPaid: true, status: "Paid" } : order
-        )
-      );
-    } catch (err) {
-      console.error("Payment failed", err);
-    }
+
+  const handlePaid = (order) => {
+    navigate("/payment", { state: { order } });
   };
 
   return (
@@ -92,7 +76,7 @@ const MyOrdersPage = () => {
                     <Button
                       variant="success"
                       size="sm"
-                      onClick={() => handlePaid(order._id)}
+                      onClick={() => handlePaid(order)}
                     >
                       Pay Now
                     </Button>

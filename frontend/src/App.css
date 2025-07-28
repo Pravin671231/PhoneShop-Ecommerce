@@ -86,4 +86,17 @@ body {
   font-weight: 500;
 }
 
+/* Sidebar modal */
+/* Sidebar-style modal for mobile */
+.sidebar-modal .modal-dialog {
+  margin: 0;
+  height: 100vh;
+  max-width: 100%;
+}
 
+.sidebar-modal .modal-content {
+  height: 100vh;
+  border-radius: 0;
+  overflow-y: auto;
+  padding: 1rem;
+}

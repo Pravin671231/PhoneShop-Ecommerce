@@ -12,12 +12,14 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { removeFromCart } from "../redux/features/cartSlice";
 import axios from "axios";
+import AddressListPage from "./AddressPage";
 
 const CheckoutPage = () => {
   const API = import.meta.env.VITE_API_URL;
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [message, setMessage] = useState(null);
+  const [selectedAddress, setSelectedAddress] = useState(null); // NEW
   const { cartItems } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.user);
 
@@ -27,21 +29,33 @@ const CheckoutPage = () => {
   );
 
   const placeOrder = async () => {
+    if (!selectedAddress) {
+      setMessage("Please select a shipping address.");
+      return;
+    }
+
     try {
       const config = {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,
         },
       };
+
       const orderItems = cartItems.map((item) => ({
         title: item.title,
         qty: item.qty,
         price: item.price,
         product: item._id,
       }));
-      await axios.post(`${API}/orders`, { orderItems, totalPrice }, config);
 
-      // Clear cart
+      const orderData = {
+        orderItems,
+        totalPrice,
+        shippingAddress: selectedAddress, // include full address
+      };
+
+      await axios.post(`${API}/orders`, orderData, config);
+
       localStorage.removeItem("cartItems");
       cartItems.forEach((item) => dispatch(removeFromCart(item._id)));
 
@@ -68,9 +82,9 @@ const CheckoutPage = () => {
       )}
 
       <Row>
-        {/* Left: Order Details */}
+        {/* Left: Cart Items */}
         <Col md={8}>
-          <ListGroup variant="flush" className="shadow-sm rounded">
+          <ListGroup variant="flush" className="shadow-sm rounded mb-3">
             {cartItems.map((item) => (
               <ListGroup.Item key={item._id}>
                 <Row className="align-items-center">
@@ -84,9 +98,19 @@ const CheckoutPage = () => {
               </ListGroup.Item>
             ))}
           </ListGroup>
+          {/* Inject AddressListPage with address selection */}
+          <AddressListPage onSelect={setSelectedAddress} />
+
+          {selectedAddress && (
+            <Alert variant="info" className="mt-3">
+              <strong>Delivering to:</strong> {selectedAddress.name},{" "}
+              {selectedAddress.address}, {selectedAddress.city},{" "}
+              {selectedAddress.state} - {selectedAddress.pincode}
+            </Alert>
+          )}
         </Col>
 
-        {/* Right: Summary */}
+        {/* Right: Order Summary */}
         <Col md={4}>
           <Card className="shadow-sm p-3">
             <h5>Price Details</h5>

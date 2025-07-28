@@ -5,6 +5,7 @@ require("dotenv").config();
 const userRoutes = require("./routes/userRoute");
 const productRoutes = require("./routes/productRoute");
 const orderRoutes = require("./routes/orderRoute");
+const addressRoutes = require("./routes/addressRoute");
 const { notFound, errorHandler } = require("./middlewares/errorMiddlewares");
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://phonestore-pravin.netlify.app",
+    // origin: "*",
     credentials: true,
   })
 );
@@ -23,6 +25,7 @@ app.use(
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/address", addressRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
